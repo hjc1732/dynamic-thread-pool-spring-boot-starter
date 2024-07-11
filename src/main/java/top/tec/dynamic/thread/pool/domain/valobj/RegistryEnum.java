@@ -2,8 +2,6 @@ package top.tec.dynamic.thread.pool.domain.valobj;
 
 /**
  * @author hujincheng
- * @description RegistryEnum 数据上报枚举
- * @create 2024-07-11 14:56
  */
 public enum RegistryEnum {
 

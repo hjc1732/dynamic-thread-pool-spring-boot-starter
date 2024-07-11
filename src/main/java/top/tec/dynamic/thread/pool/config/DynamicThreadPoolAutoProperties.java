@@ -4,8 +4,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
  * @author hujincheng
- * @description DynamicThreadPoolAutoProperties 动态线程池配置
- * @create 2024-07-11 11:03
  */
 @ConfigurationProperties(prefix = "dynamic-thread-pool.config", ignoreInvalidFields = true)
 public class DynamicThreadPoolAutoProperties {

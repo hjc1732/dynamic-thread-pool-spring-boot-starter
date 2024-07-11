@@ -12,8 +12,6 @@ import java.util.List;
 
 /**
  * @author hujincheng
- * @description DynamicThreadPoolListener 线程池变更监听器
- * @create 2024-07-11 11:19
  */
 public class ThreadPoolAdjustListener implements MessageListener<ThreadPoolConfigEntity> {
     private final Logger log = LoggerFactory.getLogger(ThreadPoolAdjustListener.class);

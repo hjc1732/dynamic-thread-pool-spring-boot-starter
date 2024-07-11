@@ -1,0 +1,120 @@
+{
+  "groups": [
+    {
+      "name": "dynamic-thread-pool.config",
+      "type": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties"
+    },
+    {
+      "name": "dynamic-thread-pool.config.redisson",
+      "type": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties$RedissonConfig",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties",
+      "sourceMethod": "getRedisson()"
+    },
+    {
+      "name": "dynamic-thread-pool.config.report",
+      "type": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties$ReportConfig",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties",
+      "sourceMethod": "getReport()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "dynamic-thread-pool.config.app-name",
+      "type": "java.lang.String",
+      "description": "项目名称",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties"
+    },
+    {
+      "name": "dynamic-thread-pool.config.enable",
+      "type": "java.lang.Boolean",
+      "description": "状态；open = 开启、close 关闭",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "dynamic-thread-pool.config.redisson.connect-timeout",
+      "type": "java.lang.Integer",
+      "description": "设置连接超时时间（单位：毫秒），默认为10000",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties$RedissonConfig",
+      "defaultValue": 10000
+    },
+    {
+      "name": "dynamic-thread-pool.config.redisson.host",
+      "type": "java.lang.String",
+      "description": "redis host",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties$RedissonConfig",
+      "defaultValue": "127.0.0.1"
+    },
+    {
+      "name": "dynamic-thread-pool.config.redisson.idle-timeout",
+      "type": "java.lang.Integer",
+      "description": "设置连接的最大空闲时间（单位：毫秒），超过该时间的空闲连接将被关闭，默认为10000",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties$RedissonConfig",
+      "defaultValue": 10000
+    },
+    {
+      "name": "dynamic-thread-pool.config.redisson.keep-alive",
+      "type": "java.lang.Boolean",
+      "description": "设置是否保持长连接，默认为true",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties$RedissonConfig",
+      "defaultValue": true
+    },
+    {
+      "name": "dynamic-thread-pool.config.redisson.min-idle-size",
+      "type": "java.lang.Integer",
+      "description": "设置连接池的最小空闲连接数，默认为10",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties$RedissonConfig",
+      "defaultValue": 10
+    },
+    {
+      "name": "dynamic-thread-pool.config.redisson.password",
+      "type": "java.lang.String",
+      "description": "账密",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties$RedissonConfig"
+    },
+    {
+      "name": "dynamic-thread-pool.config.redisson.ping-interval",
+      "type": "java.lang.Integer",
+      "description": "设置定期检查连接是否可用的时间间隔（单位：毫秒），默认为0，表示不进行定期检查",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties$RedissonConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "dynamic-thread-pool.config.redisson.pool-size",
+      "type": "java.lang.Integer",
+      "description": "设置连接池的大小，默认为64",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties$RedissonConfig",
+      "defaultValue": 64
+    },
+    {
+      "name": "dynamic-thread-pool.config.redisson.port",
+      "type": "java.lang.Integer",
+      "description": "redis port",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties$RedissonConfig",
+      "defaultValue": 6379
+    },
+    {
+      "name": "dynamic-thread-pool.config.redisson.retry-attempts",
+      "type": "java.lang.Integer",
+      "description": "设置连接重试次数，默认为3",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties$RedissonConfig",
+      "defaultValue": 3
+    },
+    {
+      "name": "dynamic-thread-pool.config.redisson.retry-interval",
+      "type": "java.lang.Integer",
+      "description": "设置连接重试的间隔时间（单位：毫秒），默认为1000",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties$RedissonConfig",
+      "defaultValue": 1000
+    },
+    {
+      "name": "dynamic-thread-pool.config.report.cron",
+      "type": "java.lang.String",
+      "description": "上报任务:cron表达式  表示定时多久执行一次上报统计",
+      "sourceType": "top.tec.dynamic.thread.pool.config.DynamicThreadPoolAutoProperties$ReportConfig",
+      "defaultValue": "0\/20 * * * * ?"
+    }
+  ],
+  "hints": []
+}

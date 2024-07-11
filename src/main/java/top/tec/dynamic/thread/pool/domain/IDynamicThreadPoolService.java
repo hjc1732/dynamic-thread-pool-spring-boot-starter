@@ -6,8 +6,6 @@ import java.util.List;
 
 /**
  * @author hujincheng
- * @description IDynamicThreadPoolService 动态线程池服务
- * @create 2024-07-11 11:13
  */
 public interface IDynamicThreadPoolService {
 

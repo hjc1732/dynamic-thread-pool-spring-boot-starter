@@ -2,8 +2,6 @@ package top.tec.dynamic.thread.pool.domain.entity;
 
 /**
  * @author hujincheng
- * @description ThreadPoolConfigEntity 线程池配置实体对象
- * @create 2024-07-11 13:49
  */
 public class ThreadPoolConfigEntity {
 

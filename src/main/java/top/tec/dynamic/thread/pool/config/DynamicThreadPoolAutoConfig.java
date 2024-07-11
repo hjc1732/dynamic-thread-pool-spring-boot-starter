@@ -30,8 +30,6 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * @author hujincheng
- * @description DynamicThreadPoolAutoConfig 动态线程池自动装配对象
- * @create 2024-07-11 11:06
  */
 @EnableScheduling
 @EnableConfigurationProperties(DynamicThreadPoolAutoProperties.class)

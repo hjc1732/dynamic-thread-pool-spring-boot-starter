@@ -14,8 +14,6 @@ import java.util.stream.Collectors;
 
 /**
  * @author hujincheng
- * @description DynamicThreadPoolService
- * @create 2024-07-11 13:52
  */
 public class DynamicThreadPoolService implements IDynamicThreadPoolService {
     private final Logger logger = LoggerFactory.getLogger(DynamicThreadPoolService.class);
